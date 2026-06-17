@@ -16,3 +16,8 @@ docker compose exec web bash
 
 ## qnd adicionar uma nova classe
 docker compose exec web composer dump-autoload
+
+
+ docker compose up -d --build  
+ docker compose exec web composer install  
+ docker compose up -d
