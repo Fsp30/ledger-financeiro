@@ -54,4 +54,14 @@
             );
         }
     }
+
+    class EmptyTransactionError extends DomainError{
+        public function __construct()
+        {
+            parent::__construct(
+                "Transaction must have at least one entry",
+                400,
+            );
+        }
+    }
 ?>
