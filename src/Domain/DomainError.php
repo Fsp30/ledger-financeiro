@@ -24,4 +24,14 @@
             );
         }
     }
+
+    class UnbalancedTransactionError extends DomainError{
+        public function __construct()
+        {
+            parent::__construct(
+                "Unbalanced transaction",
+                422,
+            );
+        }
+    }
 ?>
