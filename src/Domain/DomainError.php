@@ -13,4 +13,15 @@
             parent::__construct($message);
         }
     }
+
+    class AccountNotFoundError extends DomainError
+    {
+        public function __construct(string $accountId)
+        {
+            parent::__construct(
+                "Account not found: {$accountId}",
+                404,
+            );
+        }
+    }
 ?>
