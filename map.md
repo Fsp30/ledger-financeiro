@@ -1,0 +1,20 @@
+.
+├── desafio.md
+├── docker-compose.yml
+├── Dockerfile
+├── LICENSE
+├── map.md
+├── README.md
+└── src
+    ├── domain
+    ├── index.php
+    ├── infra
+    ├── modules
+    │   ├── accounts
+    │   └── transactions
+    └── shared
+        ├── idempotency.php
+        ├── middlewares
+        └── validation.php
+
+8 directories, 9 files
