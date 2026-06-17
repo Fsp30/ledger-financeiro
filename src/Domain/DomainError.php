@@ -44,4 +44,14 @@
             );
         }
     }
+
+    class ValidationError extends DomainError{
+        public function __construct(string $message)
+        {
+            parent::__construct(
+                $message,
+                400,
+            );
+        }
+    }
 ?>
