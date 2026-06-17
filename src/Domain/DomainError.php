@@ -64,4 +64,14 @@
             );
         }
     }
+
+    class DuplicateTransactionError extends DomainError{
+        public function __construct()
+        {
+            parent::__construct(
+                "Duplicate transaction detected. Original transaction ID: {$originalTransactionId}. This operation was already processed within the last 10 minutes.",
+                400,
+            );
+        }
+    }
 ?>
