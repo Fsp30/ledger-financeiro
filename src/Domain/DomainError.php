@@ -34,4 +34,14 @@
             );
         }
     }
+
+    class TransactionNotFoundError extends DomainError{
+        public function __construct(string $transactionId)
+        {
+            parent::__construct(
+                "Transaction not found: {$transactionId}",
+                404,
+            );
+        }
+    }
 ?>
